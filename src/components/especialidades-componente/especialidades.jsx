@@ -4,13 +4,13 @@ import { AiFillExperiment } from "react-icons/ai";
 import { MdApartment } from "react-icons/md";
 import "./especialidades-comp.css";
 
-export function Especialidades(){
+export function Especialidades({ className }){
 
     return<>
 
         
         <h2 className="especialidades-titulo">Nuestras Especialidades</h2>
-        <div className="contenedor-especialidades">            
+        <div className={`contenedor-especialidades ${className}`}>            
             <div className="especialidad">
                 <div className="align"><MdElectricBolt size={40}/><br /><p>Electromecanica</p></div>
             </div>
