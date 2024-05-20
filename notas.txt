@@ -1,0 +1,8 @@
+Cosas pendientes
+    - La Navbar falla en los Links.
+        |1|
+        |2| Posible error: "use client" hace que `Link` no funcione correctamente.
+        |3|
+        |4| Posible solución: Usar `useRouter()` en lugar de `Link`
+        |5|
+    -
