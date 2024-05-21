@@ -11,25 +11,25 @@ export default function EspecialidadesComponent({ className = "" }) {
             <ul>
                 <li>
                     <Link href="/especialidades/electromecanica">
-                        <MdElectricBolt size={40} />
+                        <MdElectricBolt size={25} />
                         Electromecánica
                     </Link>
                 </li>
                 <li>
                     <Link href="/especialidades/informatica">
-                        <FaMicrochip size={40} />
+                        <FaMicrochip size={25} />
                         Informática
                     </Link>
                 </li>
                 <li>
                     <Link href="/especialidades/quimica">
-                        <AiFillExperiment size={40} />
+                        <AiFillExperiment size={25} />
                         Química
                     </Link>
                 </li>
                 <li>
                     <Link href="/especialidades/construcciones">
-                        <MdApartment size={40} />
+                        <MdApartment size={25} />
                         Construcciones
                     </Link>
                 </li>
