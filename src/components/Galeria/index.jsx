@@ -1,3 +1,4 @@
+import CarouselComponent from '../Carousel';
 import styles from './galeria.module.css';
 
 export function ImagenComponent({ src, alt }) {
@@ -15,6 +16,10 @@ export default function GaleriaComponent({ galeria }) {
 
         <div className={`${styles.Galeria}`}>
             {galeria.map(imagen => <ImagenComponent key={imagen.id} src={imagen.src} alt={imagen.alt} />)}
+        </div>
+
+        <div className={`${styles.CarouselContainer}`}>
+            <CarouselComponent items={galeria} />
         </div>
 
     </div>

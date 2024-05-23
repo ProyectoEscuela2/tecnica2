@@ -1,0 +1,9 @@
+.Carousel {
+    height: 300px;
+}
+
+.Carousel img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}

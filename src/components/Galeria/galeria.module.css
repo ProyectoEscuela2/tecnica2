@@ -5,7 +5,12 @@
     gap: 20px;
 }
 
-@media screen and (max-width: 768px) {
+.CarouselContainer {
+    display: none;
+}
+
+/* En caso de que no se quiera usar Carousel */
+/* @media screen and (max-width: 768px) {
     .Galeria {
         grid-template-columns: repeat(2, minmax(200px, 400px));
     }
@@ -14,6 +19,16 @@
 @media screen and (max-width: 540px) {
     .Galeria {
         grid-template-columns: 1fr;
+    }
+} */
+
+/* En caso de que se quiera usar Carousel */
+@media screen and (max-width: 768px) {
+    .Galeria {
+        display: none;
+    }
+    .CarouselContainer {
+        display: block;
     }
 }
 
