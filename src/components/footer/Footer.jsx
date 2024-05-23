@@ -16,7 +16,7 @@ export function Footer(){
                 <img src="wave-haikei-oscuro.svg" alt="" className='in-img-ola-footer' />
             </div> 
 
-        <div className="footer">
+        <div className="footer pt-5">
             
         
         <div className="flex">    

@@ -1,9 +1,4 @@
-1. Diseñar página web `Especialidades`
-    x A. Background: #101518
-    x B. Navbar
-    x B.1 Index
-    x C. Video
-    x D. Texto descriptivo
-    x E. Botón `Descargar diseño curricular` (#12B5B5)
-    x F. Carousel: Items(Practicas Profesionalizantes, Continuidad educativa, Salida laboral)
-    G. Carousel: Imagenes de la Especialidades
+Tareas
+    - Agregar un padding top al footer
+    - Subir la página al GitHub
+    - Hacer que el acordeón tenga la posibilidad de cerrarse.

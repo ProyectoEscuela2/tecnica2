@@ -1,12 +1,12 @@
 "use client";
 import { useState } from 'react';
 import DescripcionSection from '@/components/DescripcionComponent';
-import { ELECTRO_DATA } from '@/assets/static/especialidades/electromecanica';
+import { QUI_DATA } from '@/assets/static/especialidades/quimica';
 import TarjetasInformativasSection from '@/components/TarjetasInformativasComponent';
 import GaleriaSection from '@/components/Galeria';
 
 export default function ElectroPage() {
-    const [data, setData] = useState(ELECTRO_DATA);
+    const [data, setData] = useState(QUI_DATA);
     return <>
 
         <DescripcionSection
