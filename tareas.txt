@@ -2,9 +2,8 @@
     x A. Background: #101518
     x B. Navbar
     x B.1 Index
-    C. Video
-    D. Texto descriptivo
-        - A video y texto descriptivo los puse en una sola sección, voy a poner las secciones en componentes ya que se van a reutilizar por cada pagina (electro, info, quimica, mmo) lo que va a cambiar es la información y el video de Youtube, junto con las imagenes, items, diseño curricular, etc, entonces todo eso lo voy a especificar en assets/especialidades/x.json donde cada especialidad va a tener un archivo con estas especificaciones. Nota: Puse json pero va a ser js
-    E. Botón `Descargar diseño curricular` (#12B5B5)
-    F. Carousel: Items(Practicas Profesionalizantes, Continuidad educativa, Salida laboral)
+    x C. Video
+    x D. Texto descriptivo
+    x E. Botón `Descargar diseño curricular` (#12B5B5)
+    x F. Carousel: Items(Practicas Profesionalizantes, Continuidad educativa, Salida laboral)
     G. Carousel: Imagenes de la Especialidades

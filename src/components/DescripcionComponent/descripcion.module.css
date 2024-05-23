@@ -1,3 +1,28 @@
 .descripcion {
-    margin: 150px 0;
+    
+}
+
+.videoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.videoContainer iframe {
+    width: 540px;
+    height: 300px;
+}
+
+@media screen and (min-width: 461px) and (max-width: 566px) {
+    .videoContainer iframe {
+        width: 440px;
+        height: 240px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .videoContainer iframe {
+        width: 340px;
+        height: 180px;
+    }
 }

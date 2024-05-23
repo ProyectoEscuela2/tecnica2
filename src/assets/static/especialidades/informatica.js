@@ -9,78 +9,103 @@ export const INFO_DATA = {
     "practicasInfo": [
         {
             "id": 0,
-            "empresa": "Ternium",
-            "sectores": ["Industria", "Operaciones", "Tecnología"]
+            "nombre": "Ternium",
         },
         {
             "id": 1,
-            "empresa": "Ternium1",
-            "sectores": ["Industria", "Operaciones", "Tecnología"]
+            "nombre": "Sidersa",
         },
         {
             "id": 2,
-            "empresa": "Ternium2",
-            "sectores": ["Industria", "Operaciones", "Tecnología"]
+            "nombre": "AKA",
         },
     ],
     "continuidadInfo": [
         {
             "id": 0,
-            "carrera": "Ingeniería en Sistemas",
-            "titulo": "Ingeniero",
-            "escuelas": ["UTN", "UAI", "U21"]
+            "nombre": "Ing. Sistemas"
         },
         {
             "id": 1,
-            "carrera": "Ingeniería en Programación",
-            "titulo": "Ingeniero",
-            "escuelas": ["UTN", "UAI", "U21"]
+            "nombre": "Ing. Informática"
         },
         {
             "id": 2,
-            "carrera": "Ingeniería Informática",
-            "titulo": "Ingeniero",
-            "escuelas": ["UTN", "UAI", "U21"]
+            "nombre": "Ing. Programación"
         }
     ],
-    "LaboralInfo": [
+    "laboralInfo": [
         {
             "id": 0,
-            "nombre": "Ternium",
-            "ubicacion": "Av. Savio 1972, Ramallo, Argentina",
-            "propietario": "Roberto Rocca",
-            "descripcion": "Ternium es una empresa dedicada a la venta de Bakugans metálicos reciclados"
+            "nombre": "Ternium"
         },
         {
             "id": 1,
-            "nombre": "Ternium2",
-            "ubicacion": "Av. Savio 1973, Ramallo, Argentina",
-            "propietario": "Roberto Rocca2",
-            "descripcion": "2Ternium es una empresa dedicada a la venta de Bakugans metálicos reciclados"
-        },
-        {
-            "id": 3,
-            "nombre": "Ternium3",
-            "ubicacion": "Av. Savio 1973, Ramallo, Argentina",
-            "propietario": "Roberto Rocca3",
-            "descripcion": "3Ternium es una empresa dedicada a la venta de Bakugans metálicos reciclados"
-        },
-    ],
-    "Galeria": [
-        {
-            "id": 0,
-            "src": "fake/src/imageA.jpg",
-            "alt": "FakeAltDescriptionA",
-        },
-        {
-            "id": 1,
-            "src": "fake/src/imageB.jpg",
-            "alt": "FakeAltDescriptionB",
+            "nombre": "AKA"
         },
         {
             "id": 2,
-            "src": "fake/src/imageC.jpg",
-            "alt": "FakeAltDescriptionC",
+            "nombre": "Informática"
+        },
+    ],
+    // "continuidadInfo": [
+    //     {
+    //         "id": 0,
+    //         "carrera": "Ingeniería en Sistemas",
+    //         "titulo": "Ingeniero",
+    //         "escuelas": ["UTN", "UAI", "U21"]
+    //     },
+    //     {
+    //         "id": 1,
+    //         "carrera": "Ingeniería en Programación",
+    //         "titulo": "Ingeniero",
+    //         "escuelas": ["UTN", "UAI", "U21"]
+    //     },
+    //     {
+    //         "id": 2,
+    //         "carrera": "Ingeniería Informática",
+    //         "titulo": "Ingeniero",
+    //         "escuelas": ["UTN", "UAI", "U21"]
+    //     }
+    // ],
+    // "laboralInfo": [
+    //     {
+    //         "id": 0,
+    //         "nombre": "Ternium",
+    //         "ubicacion": "Av. Savio 1972, Ramallo, Argentina",
+    //         "propietario": "Roberto Rocca",
+    //         "descripcion": "Ternium es una empresa dedicada a la venta de Bakugans metálicos reciclados"
+    //     },
+    //     {
+    //         "id": 1,
+    //         "nombre": "Ternium2",
+    //         "ubicacion": "Av. Savio 1973, Ramallo, Argentina",
+    //         "propietario": "Roberto Rocca2",
+    //         "descripcion": "2Ternium es una empresa dedicada a la venta de Bakugans metálicos reciclados"
+    //     },
+    //     {
+    //         "id": 3,
+    //         "nombre": "Ternium3",
+    //         "ubicacion": "Av. Savio 1973, Ramallo, Argentina",
+    //         "propietario": "Roberto Rocca3",
+    //         "descripcion": "3Ternium es una empresa dedicada a la venta de Bakugans metálicos reciclados"
+    //     },
+    // ],
+    "galeria": [
+        {
+            "id": 0,
+            "src": "/tecnica.jpeg",
+            "alt": "Escuela Técnica N2",
+        },
+        {
+            "id": 1,
+            "src": "/tecnica.jpeg",
+            "alt": "Escuela Técnica N2",
+        },
+        {
+            "id": 2,
+            "src": "/tecnica.jpeg",
+            "alt": "Escuela Técnica N2",
         },
     ],
 }

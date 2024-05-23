@@ -12,7 +12,9 @@ export default function EspecialidadesPage({ children }) {
         <h2 className="text-center mb-4">Nuestras especialidades</h2>
         <Especialidades />
 
-        {children}
+        <div className="container-sm">
+            {children}
+        </div>
 
     </div>
 

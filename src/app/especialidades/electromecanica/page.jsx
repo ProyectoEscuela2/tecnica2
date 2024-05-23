@@ -1,22 +1,13 @@
 "use client";
 import { useState } from 'react';
 import DescripcionSection from '@/components/DescripcionComponent';
-import styles from '../especialidades.module.css';
 import { INFO_DATA } from '@/assets/static/especialidades/informatica';
+import TarjetasInformativasSection from '@/components/TarjetasInformativasComponent';
+import GaleriaSection from '@/components/Galeria';
 
 export default function ElectroPage() {
     const [data, setData] = useState(INFO_DATA);
     return <>
-    
-        {/* 
-            videoURL
-            acercaDeEspecialidad
-            diseñoCurricularSRC
-            practicasInfo
-            continuidadInfo
-            LaboralInfo
-            Galeria
-        */}
 
         <DescripcionSection
             videoURL={data.videoURL}
@@ -24,23 +15,17 @@ export default function ElectroPage() {
             diseñoCurricularSRC={data.diseñoCurricularSRC}
         />
 
-        <div className={styles.masInformacion}>
-            {/* Esta sección tengo pensada hacer la idea que vi en el video, y en mobil que sea uno solo, o no se ya veré que hago */}
+        <hr />
 
-            {/* Tarjeta practicasProfesionalizantes .map(practicasInfo) */}
+        <TarjetasInformativasSection
+            practicasInfo={data.practicasInfo}
+            continuidadInfo={data.continuidadInfo}
+            laboralInfo={data.laboralInfo}
+        />
 
-            {/* Tarjeta ContinuidadEducativa .map(continuidadInfo) */}
-            
-            {/* Tarjeta SalidaLaboral .map(LaboralInfo) */}
-        </div>
+        <hr />
 
-        <div className={styles.galeria}>
-
-            <div className="galeria-container">
-                {/* {galeria.map(imageSRC => <GaleriaImagen src={imageSRC} />)} */}
-            </div>
-
-        </div>
+        <GaleriaSection galeria={data.galeria} />
 
     </>
 }
