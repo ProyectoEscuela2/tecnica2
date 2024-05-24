@@ -1,5 +1,6 @@
 export const QUI_DATA = {
     "videoURL": "https://www.youtube.com/embed/Z-11MBl5zkA?si=yTvNTwMw6xI0Cv0w",
+    "titulo":"Quimica",
     "acercaDeEspecialidad": [ // [Paragraph, Paragraph, ..., Paragraph]
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus facere culpa odio quos, alias sequi eligendi omnis et saepe! Magni, quidem mollitia sapiente nostrum enim amet rem ut dolorum est recusandae, dignissimos iusto, quam ducimus explicabo? Fugit nam eveniet quam sequi praesentium explicabo amet harum beatae a voluptas provident officiis, tempora at distinctio cupiditate facilis inventore id,",
         "sit saepe incidunt, quae totam suscipit accusantium! Consequatur sequi, cupiditate veniam quo maiores error corporis beatae consectetur veritatis ex odio doloribus est ipsam ipsum laudantium magnam molestiae. Qui assumenda consequatur culpa illo impedit, animi molestias ipsa illum sunt, quo sit ut accusamus autem, obcaecati quasi aut minus saepe non rem neque? Praesentium, nesciunt deserunt eos labore assumenda, excepturi mollitia sint explicabo non ab, autem a cumque. Architecto maiores ad ea at distinctio pariatur nesciunt molestiae magni sapiente? Dolorum incidunt dolores earum quisquam. Harum voluptas sed saepe molestias eligendi! Nesciunt ratione vero quia voluptatum eligendi sed obcaecati expedita,",

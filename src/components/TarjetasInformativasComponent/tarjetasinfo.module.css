@@ -16,6 +16,7 @@
 
 .CardBody {
     padding: 10px 20px;
+    transition: all 1s;
 }
 
 .CardBody ul {

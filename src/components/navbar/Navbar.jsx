@@ -10,13 +10,21 @@ import {
   NavItem,
   // NavLink,
 } from 'reactstrap';
-
+import { usePathname } from 'next/navigation';
 import "./Navbar-estilo.css"
 
 export function Navbarr(props) {
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
+
+  const path = usePathname()
+
+  const linkInicio = "/"
+  const linkEspecialidades = "/especialidades"
+  const linkGaleria= "/galeria"
+  const linkInscripcion = "/inscripcion"
+  const linkContacto = "/contacto"
 
   return (<>
     <div className="navbar-mobile">
@@ -25,19 +33,19 @@ export function Navbarr(props) {
         <Collapse className='nav-toggle-fondo' isOpen={!collapsed} navbar>
           <Nav navbar>
           <NavItem>
-              <Link className='nav-item' href="/">Inicio</Link>
+              <Link href={linkInicio}><div className="nav-item">Inicio</div></Link>
             </NavItem>
             <NavItem>
-              <Link className='nav-item' href="/especialidades">Especialidades</Link>
+              <Link href={linkEspecialidades}><div className="nav-item">Especialidades</div></Link>
             </NavItem>
             <NavItem>
-              <Link className='nav-item' href="/galeria">Galeria</Link>
+              <Link href="/galeria"><div className="nav-item">Galeria</div></Link>
             </NavItem>
             <NavItem>
-              <Link className='nav-item' href="/inscripciones">Inscripciones</Link>
+              <Link href="/inscripciones"><div className="nav-item">Inscribirme</div></Link>
             </NavItem>
             <NavItem>
-              <Link  className='nav-item'href="/contacto">Contacto</Link>
+              <Link href="/contacto"><div className="nav-item">Contacto</div></Link>
             </NavItem>
           </Nav>
         </Collapse>
@@ -47,11 +55,11 @@ export function Navbarr(props) {
     <div className="navbar-pc">
 
         <ul className="navbar-pc-ul">
-          <li className='navbar-pc-li'><a className='navbar-a' href="">Inicio</a></li>
-          <li className='navbar-pc-li'><a className='navbar-a' href="">Especialidades</a></li>
-          <li className='navbar-pc-li'><a className='navbar-a' href="">Galeria</a></li>
-          <li className='navbar-pc-li'><a className='navbar-a' href="">Inscripciones</a></li>
-          <li className='navbar-pc-li'><a className='navbar-a' href="">Contacto</a></li>
+          <Link className='navbar-a' href="/"><li className={`navbar-pc-li ${path == linkInicio ? 'navActive' : ''}`}>Inicio</li></Link>
+          <Link className='navbar-a' href={linkEspecialidades}><li className={`navbar-pc-li ${path == linkEspecialidades ? 'navActive' : ''}`}>Especialidades</li></Link>
+          <Link className='navbar-a' href=""><li className={`navbar-pc-li ${path == linkGaleria ? 'navActive' : ''}`}>Galeria</li></Link>
+          <Link className='navbar-a' href=""><li className={`navbar-pc-li ${path == linkInscripcion ? 'navActive' : ''}`}>Inscripciones</li></Link>
+          <Link className='navbar-a' href=""><li className={`navbar-pc-li ${path == linkContacto ? 'navActive' : ''}`}>Contacto</li></Link>
         </ul>
 
     </div>

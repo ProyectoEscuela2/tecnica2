@@ -13,6 +13,7 @@ export default function ElectroPage() {
             videoURL={data.videoURL}
             acercaDeEspecialidad={data.acercaDeEspecialidad}
             diseñoCurricularSRC={data.diseñoCurricularSRC}
+            titulo={data.titulo}
         />
 
         <hr />

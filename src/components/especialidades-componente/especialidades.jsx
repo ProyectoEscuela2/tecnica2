@@ -12,16 +12,16 @@ export function Especialidades({ className }){
         <h2 className="especialidades-titulo">Nuestras Especialidades</h2>
         <div className={`contenedor-especialidades ${className}`}>            
             <div className="especialidad">
-                <div className="align"><MdElectricBolt size={40}/><br /><p>Electromecanica</p></div>
+                <div className="align"><MdElectricBolt size={40}/><br /><p className="noMargin">Electromecanica</p></div>
             </div>
             <div className="especialidad">
-                <div className="align"><FaMicrochip size={40}/><br /><p>Informatica</p></div>          
+                <div className="align"><FaMicrochip size={40}/><br /><p className="noMargin">Informatica</p></div>          
             </div>
             <div className="especialidad">
-                <div className="align"><AiFillExperiment size={40}/><br /><p>Quimica</p></div>           
+                <div className="align"><AiFillExperiment size={40}/><br /><p className="noMargin">Quimica</p></div>           
             </div>
             <div className="especialidad">
-                <div className="align"><MdApartment size={40}/><br /><p>Construcciones</p></div>
+                <div className="align"><MdApartment size={40}/><br /><p className="noMargin">Construcciones</p></div>
             </div>
 
         </div>

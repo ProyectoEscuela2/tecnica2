@@ -1,11 +1,13 @@
 import './boton1.css'
 
-export function Boton({accion,text}){
+function BotonConIcono({accion,text,children}){
 
    return(
     <div className="div-boton">
-        <button onClick={accion} className="div-boton-cont">{text}</button>
+        <button className="div-boton-cont" onClick={accion} type='button'>{children} {text}</button>
     </div>
     )
 
 }
+
+export {BotonConIcono}
