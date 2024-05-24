@@ -26,7 +26,7 @@ function Imagen(){
                     <p><b>100</b> años de aprendizaje ininterrumpido</p>
                 </div>
             <div className={styles.inImgOla}>
-                <img src="wave-haikei.svg" alt="ola" className={styles.inImgOla} />
+                <img src="/wave-haikei.svg" alt="ola" className={styles.inImgOla} />
             </div> 
         </div>
 
