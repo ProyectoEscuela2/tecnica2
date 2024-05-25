@@ -21,12 +21,12 @@ function Imagen(){
                 <img src="/tecnica.jpeg" alt="Imagen Escuela" className={styles.inImg}/>
             </div>    
                 <div className={styles.textInicio}>
-                    <h1>EEST Nro 2</h1>
-                    <p>Gral. Ing. Manuel N. Savio, San Nicolas</p>
-                    <p><b>100</b> años de aprendizaje ininterrumpido</p>
+                    <h1 className={styles.animation1}>EEST Nro 2</h1>
+                    <p className={styles.animation2}>Gral. Ing. Manuel N. Savio, San Nicolas</p>
+                    <p className={styles.animation3}><b>100</b> años de aprendizaje ininterrumpido</p>
                 </div>
             <div className={styles.inImgOla}>
-                <img src="wave-haikei.svg" alt="ola" className={styles.inImgOla} />
+                <img src="/wave-haikei.svg" alt="ola" className={styles.inImgOla} />
             </div> 
         </div>
 
