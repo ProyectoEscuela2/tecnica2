@@ -79,10 +79,6 @@
         width: 100%;
         justify-content: center;
     }
-    .visible{
-        animation: animacion-tarjetas 1s ease forwards;
-    }
-
     .tarjetasMb{
         display: none;
     }
