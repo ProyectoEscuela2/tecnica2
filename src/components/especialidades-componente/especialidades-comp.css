@@ -1,4 +1,22 @@
 @import url("/src/assets/variables-color.css");
+@keyframes animacion-esp {
+    0%{
+        transform: translateY(20px) translateX(-10px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(-20px) translateX(10px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+}
+.contenedor-especialidades.active{
+    animation: animacion-esp 1s ease forwards;
+
+}
 
 .contenedor-especialidades{
 
@@ -7,6 +25,7 @@
     align-items: center;
     flex-wrap: wrap;
     height: 291px;
+    opacity: 0;
 }
 
 .especialidad{
@@ -24,6 +43,8 @@
     transition: background-color 1s;
     justify-content: center;
     cursor: pointer;
+    box-sizing: border-box;
+    color: var(--color-primario-oscuro);
 }
 .align{
 
@@ -39,7 +60,10 @@
     background-color: var(--color-secundario-acromatico);
 }
 .especialidad:active{
-    border: var(--color-primario-oscuro) solid 3px;
+    transition: background-color 0.1s;
+    box-shadow: 1px 1px 5px 5px var(--color-secundario-brillante);
+    background-color: var(--color-primario-oscuro);
+    color: var(--color-primario-claro);
 }
 .noMargin{
     margin-bottom: 0px;

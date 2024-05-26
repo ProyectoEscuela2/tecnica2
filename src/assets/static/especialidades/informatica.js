@@ -92,17 +92,17 @@ export const INFO_DATA = {
     // ],
     "galeria": [
         {
-            "id": 0,
+            "id": "id0",
             "src": "/tecnica.jpeg",
             "alt": "Escuela Técnica N2",
         },
         {
-            "id": 1,
+            "id": "id1",
             "src": "/tecnica.jpeg",
             "alt": "Escuela Técnica N2",
         },
         {
-            "id": 2,
+            "id": "id2",
             "src": "/tecnica.jpeg",
             "alt": "Escuela Técnica N2",
         },

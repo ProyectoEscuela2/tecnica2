@@ -39,19 +39,19 @@ function SeccionDatos(){
 
         <>
 
-        <article className={styles.tarjetasMb}>
-            <Tarjeta num ={<MdPsychology size={40}/>} dato="Preparamos a nuestros estudiantes para ser líderes en sus campos técnicos"></Tarjeta>
-            <Tarjeta num ={<MdOutlineWork size={40} />} dato="Con conexiones directas con empresas líderes, brindamos oportunidades laborales prácticas y reales"></Tarjeta>
-            <Tarjeta num ={<IoMdSchool size={40} />} dato="Con un enfoque práctico y colaborativo, impulsamos el éxito de cada estudiante"></Tarjeta>
-        </article>
+        <section className={styles.tarjetasMb}>
+            <Tarjeta id="id1" num ={<MdPsychology size={40}/>} dato="Preparamos a nuestros estudiantes para ser líderes en sus campos técnicos"></Tarjeta>
+            <Tarjeta id="id2" num ={<MdOutlineWork size={40} />} dato="Con conexiones directas con empresas líderes, brindamos oportunidades laborales prácticas y reales"></Tarjeta>
+            <Tarjeta id="id3" num ={<IoMdSchool size={40} />} dato="Con un enfoque práctico y colaborativo, impulsamos el éxito de cada estudiante"></Tarjeta>
+        </section>
 
-        <article className={styles.tarjetas}>
+        <section className={styles.tarjetas}>
             <div className={styles.tarjetasContenedor}>
-            <Tarjeta num ={<MdPsychology size={70}/>} dato="Preparamos a nuestros estudiantes para ser líderes en sus campos técnicos"></Tarjeta>
-            <Tarjeta num ={<MdOutlineWork size={70} />} dato="Con conexiones directas con empresas líderes, brindamos oportunidades laborales prácticas y reales"></Tarjeta>
-            <Tarjeta num ={<IoMdSchool size={70} />} dato="Con un enfoque práctico y colaborativo, impulsamos el éxito de cada estudiante"></Tarjeta>
+            <Tarjeta id="id1" num ={<MdPsychology size={70}/>} dato="Preparamos a nuestros estudiantes para ser líderes en sus campos técnicos"></Tarjeta>
+            <Tarjeta id="id2" num ={<MdOutlineWork size={70} />} dato="Con conexiones directas con empresas líderes, brindamos oportunidades laborales prácticas y reales"></Tarjeta>
+            <Tarjeta id="id3" num ={<IoMdSchool size={70} />} dato="Con un enfoque práctico y colaborativo, impulsamos el éxito de cada estudiante"></Tarjeta>
             </div>
-        </article>
+        </section>
 
         </>
     )

@@ -1,37 +1,27 @@
-import React from 'react'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
-import iconUrl0 from 'leaflet/dist/images/marker-icon.png';
-import iconRetinaUrl0 from 'leaflet/dist/images/marker-icon-2x.png';
-import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
+import React, { useEffect, useRef } from 'react';
+import mapboxgl from 'mapbox-gl';
 
-let DefaultIcon = L.icon({
-  iconUrl: iconUrl0,
-  iconRetinaUrl: iconRetinaUrl0,
-  shadowUrl: shadowUrl,
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41],
-});
+const Map = () => {
+  const mapContainer = useRef(null);
 
-L.Marker.prototype.options.icon = DefaultIcon;
+  useEffect(() => {
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZWVzdDIiLCJhIjoiY2x3bXR1dnVqMW4zZTJscDRrd3poNTFzeCJ9.X11BXUjQzFQLXAMQL-Ue7g';
 
-const MapComponent = () => {
-  return (
-    <MapContainer center={[-33.3351525813574, -60.22430281421153]} zoom={13} style={{ height: '250px', width: '250px' }}>
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-      />
-      <Marker position={[-33.3351525813574, -60.22430281421153]}>
-        <Popup>
-          E.E.S.T Nº2 Gral. Ing. Manuel N. Savio
-        </Popup>
-      </Marker>
-    </MapContainer>
-  );
-}
+    const map = new mapboxgl.Map({
+      container: mapContainer.current,
+      center: [-60.22439152,-33.33514792 ],
+      zoom: 15
+    });
 
-export default MapComponent;
+    // Agregar un marcador al mapa
+    const marker = new mapboxgl.Marker()
+      .setLngLat([-60.22439152,-33.33514792 ]) 
+      .addTo(map);
+
+    return () => map.remove(); 
+  }, []); 
+
+  return <div ref={mapContainer} style={{ width: '400px', height: '400px' }} />;
+};
+
+export default Map;

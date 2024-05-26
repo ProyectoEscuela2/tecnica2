@@ -33,9 +33,39 @@
     column-gap: 20px;
 }
 
+.cardIcon{
+    display: none;
+
+}
+
+.cardText{
+    width: 100%;
+}
+
+@keyframes animacion-info {
+    0%{
+        transform: translateY(20px) translateX(-10px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(-20px) translateX(10px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    } 
+}
+
+.itemVisible{
+
+    animation: animacion-info 1s ease forwards;
+
+}
+
 @media screen and (max-width: 770px) {
     .masInformacion {
-        flex-direction: column
+        flex-direction: column;
     }
 
     .Card {
@@ -44,6 +74,8 @@
         flex-grow: 0;
         flex-basis: min-content;
         min-height: auto;
+        margin-top: 10px;
+        border-radius: 10px;
     }
 
     .CardHeader:hover, .ActiveCard .CardHeader {
@@ -54,15 +86,52 @@
     .CardHeader {
         border: var(--border-header);
         padding: 15px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .cardIcon{
+        display: block;
+        width: 5%;
+        transform: rotateX(0deg);
+        transition: transform 0.3s;
+    }
+    .cardText{
+        width: 95%;
     }
 
     .CardBody {
         border-left: var(--border-header);
         border-right: var(--border-header);
         display: none;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-sizing: border-box;
     }
 
+    @keyframes despliegue-carta {
+
+        from{
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+        to{
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+    }
     .ActiveCard .CardBody {
         display: block;
+        animation: despliegue-carta 1s ease forwards;
     }
+
+    .ActiveCard .cardIcon{
+
+        transform: rotateX(180deg);
+        transition: transform 0.3s;
+
+    }
+
 }

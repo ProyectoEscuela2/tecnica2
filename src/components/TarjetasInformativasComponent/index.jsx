@@ -1,16 +1,35 @@
-"use client";
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import styles from './tarjetasinfo.module.css';
+import { IoIosArrowDown } from "react-icons/io";
+import { useInView } from 'react-intersection-observer';
 
-export function CardComponent({ id, title, items, isActive, onClick }) {
-    // Esta función `handleClick` controla el state `activeItem` del componente `TarjetasInformativasComponent`
-    const handleClick = () => onClick(id); // Nota: Podría hacer que si ya está seleccionado y hago click, se deseleccione
+export function CardComponent({ id, title, items, initialIsActive}) {
+    
+    const [isActive, setActiveItem] = useState(initialIsActive)
+
+
+    const itemClick = () => {
+        setActiveItem(!isActive)
+    } 
+
+    const [ref,inView] = useInView()
+    const [isVisible, setIsVisible] = useState(false)
+
+    useEffect(()=>{
+
+        if(inView && isVisible == false){
+            setIsVisible(!isVisible)
+        }
+    },[inView, isVisible])
+
+    const activarItem = `${isVisible ? styles.itemVisible : ''}`
+
 
     return <>
 
-        <div className={`${styles.Card} ${isActive ? styles.ActiveCard : ''}`}>
-            <div className={styles.CardHeader} onClick={handleClick}>
-                {title}
+        <div ref={ref} id={id} className={`${styles.Card} ${activarItem} ${isActive ? styles.ActiveCard : ''}`}>
+            <div className={styles.CardHeader} onClick={itemClick}>
+                <div className={styles.cardText}>{title}</div><div className={styles.cardIcon}><IoIosArrowDown /></div>
             </div>
 
             <div className={styles.CardBody}>
@@ -23,14 +42,23 @@ export function CardComponent({ id, title, items, isActive, onClick }) {
     </>
 }
 
+
+function cerrarActive(id, isActive){
+
+    alert(id,isActive)
+
+}
+
+
+
+
 export default function TarjetasInformativasComponent({ practicasInfo, continuidadInfo, laboralInfo}) {
-    const [activeItem, setActiveItem] = useState(null); // Recibe el id desde `CardComponent`
 
     // Controlador de Tarjetas mediante la asignación de IDs
     let _TarjetasInfo = [
-        { id: 0, title: "Practicas Profecionalizantes", items: practicasInfo },
-        { id: 1, title: "Continuidad Estudiantíl", items: continuidadInfo },
-        { id: 2, title: "Salidas Laborales", items: laboralInfo },
+        { id: "id0", title: "Practicas Profecionalizantes", items: practicasInfo },
+        { id: "id1", title: "Continuidad Estudiantíl", items: continuidadInfo },
+        { id: "id2", title: "Salidas Laborales", items: laboralInfo },
     ]
 
     return <>
@@ -42,8 +70,7 @@ export default function TarjetasInformativasComponent({ practicasInfo, continuid
                     id={id}
                     title={title}
                     items={items}
-                    isActive={(id == activeItem) ? true : false}
-                    onClick={setActiveItem}
+                    initialIsActive={false}
                 />
             ))}
             

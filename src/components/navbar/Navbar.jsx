@@ -26,6 +26,9 @@ export function Navbarr(props) {
   const linkInscripcion = "/inscripcion"
   const linkContacto = "/contacto"
 
+
+  const isPathActive = (link) => path.startsWith(link);
+
   return (<>
     <div className="navbar-mobile">
       <Navbar style={{backgroundColor:"#101518"}}>
@@ -55,8 +58,8 @@ export function Navbarr(props) {
     <div className="navbar-pc">
 
         <ul className="navbar-pc-ul">
-          <Link className='navbar-a' href="/"><li className={`navbar-pc-li ${path == linkInicio ? 'navActive' : ''}`}>Inicio</li></Link>
-          <Link className='navbar-a' href={linkEspecialidades}><li className={`navbar-pc-li ${path == linkEspecialidades ? 'navActive' : ''}`}>Especialidades</li></Link>
+          <Link className='navbar-a' href="/"><li className={`navbar-pc-li ${path === linkInicio ? 'navActive' : ''}`}>Inicio</li></Link>
+          <Link className='navbar-a' href={linkEspecialidades}><li className={`navbar-pc-li ${isPathActive(linkEspecialidades) ? 'navActive' : ''}`}>Especialidades</li></Link>
           <Link className='navbar-a' href=""><li className={`navbar-pc-li ${path == linkGaleria ? 'navActive' : ''}`}>Galeria</li></Link>
           <Link className='navbar-a' href=""><li className={`navbar-pc-li ${path == linkInscripcion ? 'navActive' : ''}`}>Inscripciones</li></Link>
           <Link className='navbar-a' href=""><li className={`navbar-pc-li ${path == linkContacto ? 'navActive' : ''}`}>Contacto</li></Link>

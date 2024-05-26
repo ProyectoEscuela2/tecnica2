@@ -8,9 +8,12 @@
     background-color: var(--color-primario-oscuro);
     margin-top: 30px;
     padding: 30px;
-
 }
 
+.sec-cuerpo{
+    display: flex;
+    align-items: center;
+}
 
 .sec-titulo{
 

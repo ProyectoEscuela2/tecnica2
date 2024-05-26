@@ -3,6 +3,7 @@
     text-align: center;
     width: 100%;
     background-color: var(--color-primario-oscuro);
+    box-sizing: border-box;
 }
 .navbar-pc-ul{
     text-align: center;

@@ -1,5 +1,43 @@
 @import url("/src/assets/variables-color.css");
 
+
+@keyframes animacion-tarjeta1 {
+    from{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes animacion-tarjeta3 {
+    from{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes animacion-tarjeta2 {
+    from{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+
+
 .datos{
     display: flex;
     align-items: center;
@@ -8,7 +46,20 @@
     background-color: var(--color-primario-claro);
     margin: 5px;
     padding: 15px;
+    opacity: 0;
+}
 
+.active.id1{
+    animation: animacion-tarjeta1 1s ease forwards;
+    opacity: 0;
+}
+.active.id3{
+    animation: animacion-tarjeta3 1s ease forwards;
+    opacity: 0;
+}
+.active.id2{
+    animation: animacion-tarjeta2 1s ease forwards;
+    opacity: 0;
 }
 .numero{
     margin-right: 15px;
@@ -17,6 +68,8 @@
     font-size: 12px;
     text-align: center;
 }
+
+
 
 @media screen and (min-width: 430px){
 

@@ -1,3 +1,25 @@
+@keyframes animacion-texto {
+
+    from{
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+}
+@keyframes animacion-video {
+    from{
+        transform: translateX(70px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 .descripcion {
     
     width: 100%;
@@ -14,12 +36,14 @@
     height: 350px;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 
 .videoContainer iframe {
 
     height: auto;
     width: 100%;
+    animation: animacion-video 1s ease forwards;
     
 }
 
@@ -28,14 +52,22 @@
     margin-right: 5%;
     height: auto;
 }
+
 .infoText{
-    text-align: justify;
+    text-align: left;
+    animation: animacion-texto 1s ease forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
 }
+
 .infoTitle{
 
     margin-bottom: 20px;
+    animation: animacion-texto 1s ease forwards;
 
 }
+
+
 @media screen and (max-width: 777px) {
 
     .infoContainer{

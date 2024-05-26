@@ -1,6 +1,7 @@
 import { MdDownload as Md } from 'react-icons/md';
 import styles from './descripcion.module.css';
 import { BotonConIcono } from '../botones/boton1' 
+import { useState } from 'react';
 
 export default function DescripcionComponent({ videoURL, acercaDeEspecialidad, diseñoCurricularSRC,titulo }) {
     return <>

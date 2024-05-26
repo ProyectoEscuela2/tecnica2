@@ -14,7 +14,7 @@ export function Atencion(){
 
                 <div className="sec-mapa">
                     
-                    <MapComponent style={{height:'250px', width:'250px'}} />
+                    <MapComponent />
 
 
                     <p><a className="mapa-texto" href="https://maps.app.goo.gl/UF7fcaGr9yyzdUxbA">Abrir en Maps</a></p>
