@@ -35,6 +35,10 @@ export default function GaleriaComponent({ galeria }) {
     
     return <div className="my-5">
 
+
+        
+        <h4 className={styles.tituloGaleria}>Galeria de la especialidad</h4>
+        
         <div className={`${styles.Galeria}`}>
             {galeria.map(imagen => <ImagenComponent key={imagen.id} src={imagen.src} alt={imagen.alt} id={imagen.id} />)}
         </div>

@@ -43,3 +43,7 @@
     object-fit: cover;
     border-radius: 12px;
 }
+.tituloGaleria{
+    text-align: center;
+    margin-bottom: 50px;
+}
