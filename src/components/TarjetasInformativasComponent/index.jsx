@@ -43,15 +43,6 @@ export function CardComponent({ id, title, items, initialIsActive}) {
 }
 
 
-function cerrarActive(id, isActive){
-
-    alert(id,isActive)
-
-}
-
-
-
-
 export default function TarjetasInformativasComponent({ practicasInfo, continuidadInfo, laboralInfo}) {
 
     // Controlador de Tarjetas mediante la asignación de IDs
