@@ -1,3 +1,4 @@
+"use client"; 
 import { MdElectricBolt } from "react-icons/md";
 import { FaMicrochip } from "react-icons/fa6";
 import { AiFillExperiment } from "react-icons/ai";

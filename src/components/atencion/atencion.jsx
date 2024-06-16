@@ -1,5 +1,6 @@
 import "./atencion-estilo.css"
 import  MapComponent  from "../mapa/mapa.jsx"
+
 export function Atencion(){
    
     return(

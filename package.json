@@ -10,15 +10,14 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "leaflet": "^1.9.4",
     "mapbox-gl": "^3.4.0",
     "next": "14.2.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
     "react-intersection-observer": "^9.10.2",
-    "react-leaflet": "^4.2.1",
     "react-map-gl": "^7.1.7",
+    "react-transition-group": "^4.4.5",
     "reactstrap": "^9.2.2"
   },
   "devDependencies": {

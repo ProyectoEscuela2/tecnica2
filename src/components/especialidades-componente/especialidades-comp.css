@@ -1,4 +1,3 @@
-@import url("/src/assets/variables-color.css");
 @keyframes animacion-esp {
     0%{
         transform: translateY(20px) translateX(-10px);

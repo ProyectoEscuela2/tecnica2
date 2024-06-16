@@ -1,3 +1,4 @@
+"use client"
 import './Tarjetas-estilos.css'
 import { useState,useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'

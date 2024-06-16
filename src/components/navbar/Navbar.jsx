@@ -5,10 +5,8 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
-  // NavLink,
 } from 'reactstrap';
 import { usePathname } from 'next/navigation';
 import "./Navbar-estilo.css"
