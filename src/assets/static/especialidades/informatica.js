@@ -2,7 +2,7 @@ export const INFO_DATA = {
     "videoURL": "https://www.youtube.com/embed/Z-11MBl5zkA?si=yTvNTwMw6xI0Cv0w",
     "titulo":"Informatica",
     "acercaDeEspecialidad": [ // [Paragraph, Paragraph, ..., Paragraph]
-        "La especialidad de Informática dura 4 años. En esta especialidad abarca tanto hardware como software. En cuanto a la primera, se van a adquirir conocimientos en instalación, configuración, mantenimiento y reparación de equipos informáticos y redes, además de electrónica y robótica básica e impresión 3D. En cuanto a Software, se adquirirán conocimientos en avanzados en aplicaciones como Word, Excel y PowerPoint, además de aplicaciones de diseño gráfico como Inkscape o GIMP. También se aprende diversos lenguajes de programación, como JavaScript, Python, PHP, C++ o lenguajes de diseño web como CSS y HTML. También se adquieren conocimientos en uso de base de datos.",
+        "La especialidad de Informática dura 4 años. Esta especialidad abarca tanto hardware como software. En cuanto a la primera, se van a adquirir conocimientos en instalación, configuración, mantenimiento y reparación de equipos informáticos y redes, además de electrónica y robótica básica e impresión 3D. En cuanto a Software, se adquirirán conocimientos en avanzados en aplicaciones como Word, Excel y PowerPoint, además de aplicaciones de diseño gráfico como Inkscape o GIMP. También se aprende diversos lenguajes de programación, como JavaScript, Python, PHP, C++ o lenguajes de diseño web como CSS y HTML. También se adquieren conocimientos en uso de base de datos.",
     ],
     "diseñoCurricularSRC": "fake/route/temporary/file.pdf",
     "practicasInfo": [
