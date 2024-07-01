@@ -7,11 +7,11 @@
 ## Instalacion: 
 
 ```bash
-git clone https://github.com/tu-usuario/nombre-del-proyecto.git
+git clone https://github.com/ProyectoEscuela2/tecnica2.git
 ``` 
 
 ```bash
-cd nombre-del-proyecto
+cd Tecnica2
 ``` 
 
 ```bash
