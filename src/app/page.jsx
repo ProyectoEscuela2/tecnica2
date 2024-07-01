@@ -1,6 +1,5 @@
-import Image from "next/image";
 import styles from "./page.module.css";
-import { MdPsychology } from "react-icons/md";
+import { MdPsychology } from "react-icons/md";//iconos
 import { MdOutlineWork } from "react-icons/md";
 import { IoMdSchool } from "react-icons/io";
 import {Especialidades} from "../components/especialidades-componente/especialidades.jsx"
