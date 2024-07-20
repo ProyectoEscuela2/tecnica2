@@ -1,0 +1,15 @@
+/* Ocultar Navegaciones y footer */
+.navbar-pc {
+	display: none;
+}
+.navbar-mobile {
+	display: none;
+}
+
+.in-img-ola-footer {
+	display: none;
+}
+
+.footer {
+	display: none;
+}

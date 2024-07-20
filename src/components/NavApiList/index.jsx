@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function NavApiList() {
 	return <>
 		<ul>
-			<h4>Contenido</h4>
+			<h4 className="NavApiList_Title">Contenido</h4>
 			<li>
 				<Link href="/api/datos-generales">Datos generales</Link>
 			</li>

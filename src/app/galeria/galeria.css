@@ -1,0 +1,42 @@
+/* EN PANTALLAS PEQUEÑAS UTILIZAMOS UNA COLUMNA */
+.grid-contenedor {
+	display: grid;
+	/* LAS FILAS SON AUTOMÁTICAS, SE AJUSTAN A LA CANTIDAD DE IMÁGENES */
+	grid-auto-rows: min-content;
+	grid-template-columns: 1fr;
+
+	gap: 15px;
+	justify-content: center;
+
+	margin: 40px 0;
+	width: 100%;
+}
+
+/* EN PANTALLAS MEDIANAS UTILIZAMOS DOS COLUMNAS */
+@media screen and (min-width: 470px) {
+	.grid-contenedor {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* EN PANTALLAS MEDIANAS/GRANDES UTILIZAMOS TRES COLUMNAS */
+@media screen and (min-width: 992px) {
+	.grid-contenedor {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.Galeria__grid-imagen, .Galeria__grid-imagen img {
+	width: 100%; height: 100%;
+}
+
+/*
+	AJUSTAMOS LA IMAGEN AL TAMAÑO DEL CONTENEDOR
+	DE ESTA MANERA PROCURAMOS QUE TODAS SEAN DEL MISMO TAMAÑO
+*/
+.Galeria__grid-imagen img {
+	object-fit: cover;
+	object-position: center;
+
+	border-radius: .2em;
+}

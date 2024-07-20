@@ -1,0 +1,45 @@
+/* Estilos del Layout */
+.ApiLayout {
+	display: flex;
+	padding: 70px 60px;
+	min-height: calc(100vh - 74px);
+}
+
+/* Estilos de la navegación */
+.ApiLayout nav {
+	flex-grow: 1;
+	background-color: #bbb;
+}
+
+.ApiLayout ul {
+	margin: 0; padding: 40px 40px;
+	width: min-content;
+	height: 100%;
+	border-radius: 12px;
+	background-color: #ddd;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.ApiLayout ul li {
+	text-wrap: nowrap;
+}
+
+{/* Metodología de clases: Componente_Nombre */}
+.NavApiList_Title {
+	text-decoration: underline;
+}
+
+/* Estilos del frame */
+.ApiLayout section {
+	flex-grow: 5;
+	background-color: #ddd;
+}
+
+.ApiIndexPage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
