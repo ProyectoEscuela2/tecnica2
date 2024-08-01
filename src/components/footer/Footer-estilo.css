@@ -23,15 +23,17 @@
 
     text-align: center;
     padding: 10px;
-    border-top: 2px solid var(--color-primario-claro);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
     padding-top: 20px;
     padding-bottom: 20px;
+
+    font-size: .5rem;
 }
 .f-text-h{
     
     margin-bottom: 0px;
-    color: var(--color-primario-claro);
-
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
 }
 
 .f-redes-texto{
@@ -60,17 +62,17 @@
     .footer-contacto{
         width: 45%;
         padding: 0px;
-        border-right: var(--color-primario-claro) solid 2px;
+        border-right: var(--color-primario-claro) solid 1px;
         padding-left: 5%;
         margin-left: 5%;
-        border-left: var(--color-primario-claro) solid 2px;
+        border-left: var(--color-primario-claro) solid 1px;
     }
     .footer-redes{
         width: 45%;
         padding: 0px;
         margin-left: 5%;
         margin-right: 5%;
-        border-right: var(--color-primario-claro) solid 2px;
+        border-right: var(--color-primario-claro) solid 1px;
 
     }
     

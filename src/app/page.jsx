@@ -15,9 +15,10 @@ function Imagen(){
 
         <div className="contInicio">
             <div className={styles.contImgInicio}>
-                <img src="/tecnica.jpeg" alt="Imagen Escuela" className={styles.inImg}/>
+                <img src="imagenes/1.jpg" alt="Imagen Escuela" className={styles.inImg}/>
             </div>    
                 <div className={styles.textInicio}>
+                    <p className={styles.animation1}>¡Bienvenido!</p>
                     <h1 className={styles.animation1}>EEST Nro 2</h1>
                     <p className={styles.animation2}>Gral. Ing. Manuel N. Savio, San Nicolas</p>
                     <p className={styles.animation3}><b>100</b> años de aprendizaje ininterrumpido</p>

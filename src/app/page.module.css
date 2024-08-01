@@ -9,12 +9,21 @@
     }
 }
 
+.contInicio{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
+    
+}
 .contImgInicio{
     
     position: relative;
     height: 300px;
-    background: linear-gradient(to bottom right,black, 65%, transparent);
+    background: radial-gradient(circle, rgb(16, 21, 24, .5), 60%, transparent);
+
 }
 
 .inImg {
@@ -30,7 +39,17 @@
     color: var(--color-primario-claro);
     padding: 20px;
     z-index: 1;
+    text-align: center;
+
     }
+
+.textInicio h1{
+    font-size: 5rem;
+}
+
+.textInicio p{
+    font-size: 16pt;
+}
 
 .inImgOla{
     width: 100%;
@@ -95,5 +114,7 @@
         opacity: 0;
         animation: animacion-titulo 1s ease forwards;
         animation-delay: 0.3s;
+
+        left: 40%;
     }
 }

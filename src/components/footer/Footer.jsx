@@ -39,17 +39,17 @@ export function Footer(){
                 </div>
             </a>
                 
-            <a href="facebook.com">
+            <a href="https://www.facebook.com/profile.php?id=100009423868443">
                 <div className="f-redes-facebook">
                     <FaFacebook className="f-redes-texto" id="facebook" /> <label className="f-redes-texto" htmlFor="facebook">Facebook</label>
                 </div>
             </a>
-
+{/* 
             <a href="whatsapp.com">
                 <div className="f-redes-wsp">
                     <FaWhatsappSquare className="f-redes-texto" id="wsp" /> <label className="f-redes-texto" htmlFor="wsp">Grupo de difusion</label>
                 </div>
-            </a>
+            </a> */}
 
             <a href="https://www.linkedin.com/school/eestn2/">
                 <div className="f-redes-linkedin">

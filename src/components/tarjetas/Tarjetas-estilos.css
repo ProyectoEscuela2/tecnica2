@@ -38,12 +38,13 @@
 .datos{
     display: flex;
     align-items: center;
-    border: 3px solid var(--color-secundario-acromatico);
+    border: 1px solid rgb(16, 21, 24, .2);
     border-radius: 10px;
     background-color: var(--color-primario-claro);
-    margin: 5px;
-    padding: 15px;
-    opacity: 0;
+    margin: 8px;
+    padding: 2rem;
+    opacity: 16;
+    box-shadow: 2px 16px 40px rgb(16, 21, 24, .2);
 }
 
 .active.id1{
@@ -62,7 +63,7 @@
     margin-right: 15px;
 }
 .texto{
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
 }
 
