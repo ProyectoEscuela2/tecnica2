@@ -1,0 +1,126 @@
+/* ESTILOS GENERALES (ESTRUCTURA) */
+.AdminGaleriaLayout {
+	display: grid;
+	grid-template-areas: "nav" "section";
+	grid-auto-columns: 1fr;
+	grid-template-rows: min-content 1fr;
+	height: 100%;
+}
+
+.AdminGaleriaLayout header {
+	grid-area: nav;
+}
+
+.AdminGaleriaLayout section {
+	grid-area: section;
+	overflow-y: hidden;
+}
+
+/* ESTILOS DEL INDEX PAGE */
+
+.AdminGaleriaIndexPage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.AdminGaleriaIndexPage nav {
+	margin-top: 5px;
+	display: flex;
+	column-gap: 20px;
+}
+
+/* ESTILOS DE LA NAVEGACIÓN */
+.AdminGaleriaLayout__Nav * {
+	margin: 0;
+}
+
+.AdminGaleriaLayout__Nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.AdminGaleriaLayout__Nav ul {
+	display: flex;
+	align-items: center;
+	column-gap: 16px;
+}
+
+.AdminGaleriaLayout__Nav a {
+	color: var(--color-primario-oscuro);
+	text-decoration: none;
+}
+
+.AdminGaleriaLayout__Nav a:hover {
+	color: #02273c;
+}
+
+/* ESTILOS DE LA PÁGINA "VER" */
+.AdminGaleriaVerPage {
+	background: inherit;
+}
+
+
+/* ESTILOS DE LA PÁGINA "AGREGAR" */
+.AdminGaleriaAgregarPage {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: min-content 1fr;
+	height: 100%;
+}
+
+.AdminGaleriaAgregarPage__FileInput {
+	display: flex;
+	align-items: center;
+}
+
+.AdminGaleriaAgregarPage__FileInput input {
+	flex-grow: 1;
+	background-color: #898999;
+	border-radius: 4px;
+	padding: 5px 10px;
+	margin-left: 40px;
+	margin-right: 4px;
+}
+
+.AdminGaleriaAgregarPage__FileInput input::file-selector-button {
+	display: none;	
+}
+
+.AdminGaleriaAgregarPage__FileInput button, .SaveChanges button {
+	padding: 6px 12px;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: bold;
+	transition: background-color .5s;
+	background-color: var(--color-primario-oscuro);
+}
+
+.AdminGaleriaAgregarPage__FileInput button:hover, .SaveChanges button:hover {
+	color: #000;
+	background-color: var(--color-primario-claro);
+}
+
+.AdminGaleriaAgregarPage__Imagenes {
+	height: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	overflow-y: auto;
+}
+
+.AdminGaleriaAgregarPage__Imagenes .DropContainer {
+	--color: #666;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	border: 2px dashed var(--color);
+	color: var(--color);
+}
+
+.DropContainer span {
+	font-size: 80px;
+}
